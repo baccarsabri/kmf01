@@ -10,7 +10,7 @@ exports.insert = async (req, res) => {
 
     let client;
     try {
-        client = new MongoClient(uri, { useNewUrlParser: true, });
+        client = new MongoClient(uri, {});
         await client.connect();
         const db = client.db();
 
@@ -34,7 +34,7 @@ exports.delete = async (req, res) => {
 
     let client;
     try {
-        client = new MongoClient(uri, { useNewUrlParser: true });
+        client = new MongoClient(uri, {});
         await client.connect();
         const db = client.db();
 
@@ -64,7 +64,7 @@ exports.update = async (req, res) => {
 
     let client;
     try {
-        client = new MongoClient(uri, { useNewUrlParser: true, });
+        client = new MongoClient(uri, {});
         await client.connect();
         const db = client.db();
 
@@ -94,7 +94,7 @@ exports.select = async (req, res) => {
 
     let client;
     try {
-        client = new MongoClient(uri, { useNewUrlParser: true, });
+        client = new MongoClient(uri, {});
         await client.connect();
         const db = client.db();
 
