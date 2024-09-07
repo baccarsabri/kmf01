@@ -46,7 +46,7 @@ const port = process.env.PORT || 3002;
 (async () => {
 	await dbClient.connectToDb();  // Ensure the database connection is established
 
-	app.listen(port, () => {
-		console.log(`Server running on port ${port}`);
+	app.listen(5050, '0.0.0.0', () => {
+		console.log('Server is running on port 5050');
 	});
 })();
